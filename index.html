@@ -14,6 +14,11 @@
             <button type="button" id="button-submit-name">Enter</button>
         </div>
     </div>
-    <script src="js/login.js"></script>
+    <script>
+        document.getElementById("button-submit-name").addEventListener("click", () => {
+            localStorage.setItem("input-name", document.getElementById("input-name").value.trim())
+            window.location.href = "/index-1.html"
+        })
+    </script>
 </body>
 </html>
